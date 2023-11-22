@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+ /*hlavicka*/
+.container{
+    border: 1px ;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+
+}
+
+.body{
+    font-family: sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+}
+
+.logo{
+   
+    font-size: 20px;
+    color: #95989a;
+    text-transform: uppercase;
+
+}
+
+.socials a{
+    text-decoration: none;
+    margin-left: 23px;
+}
+
+/*hlavna sekcia*/
+.topheader{
+    padding: 70px;
+    padding-bottom: 190px;
+    background-color: #F4F5F7;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maintext{
+    width: 50%;
+    color: #32325F;
+}
+.mainimage{
+    width: 50%;
+}
+
+.mainimage img{
+width: 100%;
+}
+.subtitle{
+   font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    display: block;
+
+}
+.title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.desc{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+
+.pricetag{
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+.price{
+    font-size: 48px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 50px;
+}
+
+
+.btn-green{
+    background-color: #2DCE89;text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 6px;
+    box-shadow: (0px 3px 3px rgba(173,173,173,0.16 ));
+    margin-right: 30px;
+}
+
+.btn-blue{
+    background-color: #5E72E4;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 6px;
+    box-shadow: (0px 3px 3px rgba(173,173,173,0.16 ));
+}
+
+/*sekcia about*/
+
+.about{
+    padding: 100px 0;
+}
+
+.about-subheadline{
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 15px;
+    color: #32325F;
+}
+
+.about-headline{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    color: #32325F;
+}
+
+.about-item span {
+    display: block;
+    color: #525F7F;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 35px;
+    line-height: 1.2;
+    color: #32325F;
+}
+
+.about-wrap{
+    display: flex;
+}
+
+.about-item {
+    width: 25%;
+}
+
+.about-item img {
+    margin-bottom: 40px;
+
+    /*sekcia ludia objednali*/
+}
+.people{
+    background-color: #F4F5F7;
+    padding-top: 90px;
+    padding-bottom: 110px;
+ }
+
+ .sec-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+ .sec-img{
+    width: 33%;
+    padding-bottom: 35px;
+    
+ }
+
+ .sec-subheadline{
+    color: #32325F;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 28px;
+ }
+
+ .sec-headline{
+    color: #32325F;
+    font-size: 48px;
+    display: block;
+    margin-bottom: 64px;
+ }
+
+ /*footer*/
+
+.footer{
+    background-color:#32325F;
+    padding-top: 79px;
+    padding-bottom: 104px;
+ }
+
+ .footer-link{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 7px;
+ }
+
+ .footer-block{
+    width: 33%;
+ }
+
+ .footer-wrap{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .footer-header{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 35px;
+ }
+
+ .meno{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 7px;
+ }
+
+
+
+@media (max-width: 1024px) {
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn{
+        display: inline-block;
+        min-width: 250px;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+        }
+        .btn-blue{
+            
+        }
+}
+
+@media (max-width: 768px) {
+    .mainimage, .maintext{
+        width: 100%;
+
+    }
+    .maintext{
+        order: 1;
+        margin-top: 40px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .navbar{
+        margin-bottom: 100px;
+        
+    }
+    .topheader{
+            padding-bottom: 100px;
+    }
+    .price{
+        margin-bottom: 30px;
+    }
+
+    .about-wrap{
+        flex-wrap: wrap;
+    }
+    .about-item{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .about{
+        padding: 80px 0 40px;
+    }
+    .sec-img{
+        width: 48%;
+    }
+    .footer-wrap{
+        flex-wrap: wrap;
+    }
+    .footer-block{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 585px) {
+    .about-item{
+        width: 100%;
+    }
+
+    .sec-headline{
+        margin-bottom: 30px;
+
+    }
+    .sec-img{
+        width: 100%;
+    }
+}
